@@ -3,43 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Descargar App</title>
+    <title>Descarga nuestra app</title>
     <style>
         body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #FFFFFF;
+            color: #258FCA;
+            text-align: center;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
-            background-color: #f5f5f5;
+            background-image: url('https://firebasestorage.googleapis.com/v0/b/psyched-service-419202.appspot.com/o/image%2Fapp.jpeg?alt=media&token=7ec3aca5-22d7-4771-adbb-dae4ead7a371');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
+
         .container {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 20px;
+            max-width: 500px;
+            margin: 20px;
             text-align: center;
         }
-        button {
-            background-color: #007bff;
+
+        h1 {
+            color: #258FCA;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #A9B5C3;
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .btn-download {
+            background-color: #258FCA;
+            color: #FFFFFF;
             border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
+            padding: 15px 25px;
+            font-size: 18px;
+            border-radius: 10px;
             cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+            text-decoration: none;
         }
-        button:hover {
-            background-color: #0056b3;
+
+        .btn-download:hover {
+            background-color: #1a6eb2;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <a href="mi-app.apk" download="mi-app.apk">
-            <button>Descargar App</button>
-        </a>
+        <h1>Compra exclusivamente con nuestra app</h1>
+        <p>Encuentra todos nuestros productos en un solo lugar. Descarga la app y disfruta de una experiencia de compra única y exclusiva. ¡No te lo pierdas!</p>
+        <a href="mi-app.apk" download class="btn-download">Descargar App</a>
     </div>
 </body>
 </html>
